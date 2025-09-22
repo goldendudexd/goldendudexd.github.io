@@ -1,93 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirigiendo...</title>
-    
-    <!-- Redirección inmediata por JavaScript -->
-    <script>
-        // Configuración de enlaces de afiliados
-        const affiliateLinks = {
-            'gpu1': 'https://coolmod.boost.propelbon.com/ts/i5547719/tsc?amc=communities.propelbon.539472.559722.15323581&rmd=3&trg=https%3A%2F%2Fwww.coolmod.com%2Fpowercolor-reaper-amd-radeon-rx-9070-xt-16gb-gddr6',
-            'gpu2': 'https://www.ejemplo-neobyte.com/producto-rtx4090?ref=tu_codigo_afiliado&track=789012',
-            'ram1': 'https://www.ejemplo-coolmod.com/memoria-ddr5?ref=tu_codigo_afiliado&track=345678',
-            // Añade más productos aquí
-        };
-        
-        // Función para obtener el identificador de la URL
-        function getProductId() {
-            const path = window.location.pathname;
-            // Elimina las barras y obtiene el último segmento
-            return path.split('/').pop() || path.split('/')[path.split('/').length - 2];
-        }
-        
-        // Función de redirección inmediata
-        function redirectToAffiliate() {
-            const productId = getProductId();
-            const affiliateUrl = affiliateLinks[productId];
-            
-            if (affiliateUrl) {
-                // Redirección inmediata sin delay
-                window.location.replace(affiliateUrl);
-            } else {
-                // Si no encuentra el producto, redirige a una página por defecto
-                window.location.replace('https://goldendudexd.github.io');
-            }
-        }
-        
-        // Ejecutar la redirección tan pronto como se cargue la página
-        redirectToAffiliate();
-    </script>
-    
-    <!-- Meta refresh como respaldo (por si JavaScript está deshabilitado) -->
-    <meta http-equiv="refresh" content="0;url=https://goldendudexd.github.io">
-    
-    <!-- Preconectar a los dominios de destino para mayor velocidad -->
-    <link rel="preconnect" href="https://www.coolmod.com">
-    <link rel="preconnect" href="https://www.neobyte.es">
-    
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #1a1a1a;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .loader {
-            text-align: center;
-        }
-        .spinner {
-            border: 3px solid #333;
-            border-top: 3px solid #fff;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 10px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+    <title>Mi Página</title>
 </head>
 <body>
-    <!-- Contenido mínimo que se muestra brevemente antes de la redirección -->
-    <div class="loader">
-        <div class="spinner"></div>
-        <p>Redirigiendo...</p>
-    </div>
-    
-    <!-- Noscript como respaldo adicional -->
-    <noscript>
-        <meta http-equiv="refresh" content="0;url=https://goldendudexd.github.io">
-        <p>Si no eres redirigido automáticamente, <a href="https://goldendudexd.github.io">haz click aquí</a>.</p>
-    </noscript>
+    <h1>¡Hola Mundo!</h1>
+    <p>Mi primera página en GitHub Pages</p>
 </body>
 </html>
